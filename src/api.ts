@@ -16,17 +16,14 @@ export const authorize = async (taskName: string) => {
   const body: AuthorizeRequest = {
     apikey: process.env.API_KEY!,
   };
-  const response: Promise<AuthorizeResponse> = await fetch(
-    `${process.env.API_URL}/token/${taskName}`,
-    {
-      method: "POST",
-      body: JSON.stringify(body),
-    }
-  ).then((res) => res.json());
+  const response = await fetch(`${process.env.API_URL}/token/${taskName}`, {
+    method: "POST",
+    body: JSON.stringify(body),
+  }).then((res) => res.json());
 
   console.log("AUTORYZACJA:");
   console.log(response);
-  return response;
+  return response as AuthorizeResponse;
 };
 
 export const getTask = async (token: string) => {
