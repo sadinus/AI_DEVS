@@ -1,0 +1,19 @@
+{
+  "name": "ai_devs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "task": "tsc && tsc-alias && node --env-file=.env ./dist/task.js",
+    "answer": "tsc && tsc-alias && node --env-file=.env ./dist/answer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.4.2"
+  }
+}
