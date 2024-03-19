@@ -21,8 +21,7 @@ export const authorize = async (taskName: string) => {
     body: JSON.stringify(body),
   }).then((res) => res.json());
 
-  console.log("AUTORYZACJA:");
-  console.log(response);
+  console.log("AUTORYZACJA:", response);
   return response as AuthorizeResponse;
 };
 
@@ -31,8 +30,7 @@ export const getTask = async (token: string) => {
     (res) => res.json()
   );
 
-  console.log("ZADANIE:");
-  console.log(response);
+  console.log("ZADANIE:", response);
   return response;
 };
 
@@ -45,7 +43,6 @@ export const submitAnswer = async (answer: string, token: string) => {
     body: JSON.stringify(body),
   }).then((res) => res.json());
 
-  console.log("ODPOWIEDŹ:");
-  console.log(response);
+  console.log("ODPOWIEDŹ:", response);
   return response;
 };

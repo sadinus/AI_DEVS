@@ -13,6 +13,8 @@ Projekt do rozwiązywania zadań z API od AI_DEVS.
    API_URL=https://tasks.aidevs.pl/
    ```
 
+4. Uzupełnij pliki `src/task.ts` oraz `src/answer.ts` zgodnie z komentarzami
+
 ## Korzystanie ze skryptu
 
 - Uwierzytelnienie i pobranie treści zadania `npm run task` (zawsze upewniamy się czy autoryzacja i pobranie zadania przebiegy pomyślnie, sprawdzając odpowiedź w konsoli)
