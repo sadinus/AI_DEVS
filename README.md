@@ -16,11 +16,12 @@ Projekt do rozwiązywania zadań z API od AI_DEVS.
 4. Utwórz plik `.env` w katalogu głównym, który będzie wyglądał następująco:
 
    ```
-   API_KEY=twój-api-key
    API_URL=https://tasks.aidevs.pl/
    ```
 
-5. Uzupełnij pliki `src/task.ts` oraz `src/answer.ts` zgodnie z komentarzami.
+5. Ustaw API key w zmiennej środowiskowej zgodnie z [dokumentacją](https://platform.openai.com/docs/quickstart?context=node),
+
+6. Uzupełnij pliki `src/task.ts` oraz `src/answer.ts` zgodnie z komentarzami.
 
 ## Korzystanie ze skryptu
 
