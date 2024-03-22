@@ -14,7 +14,7 @@ type AnswerRequest = {
 
 export const authorize = async (taskName: string) => {
   const body: AuthorizeRequest = {
-    apikey: process.env.OPENAI_API_KEY!,
+    apikey: process.env.API_KEY!,
   };
   const response = await fetch(`${process.env.API_URL}/token/${taskName}`, {
     method: "POST",
