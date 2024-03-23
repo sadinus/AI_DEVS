@@ -6,7 +6,8 @@
   "scripts": {
     "task": "tsc && tsc-alias && node --env-file=.env ./dist/task.js",
     "answer": "tsc && tsc-alias && node --env-file=.env ./dist/answer.js",
-    "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js"
+    "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js",
+    "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js"
   },
   "keywords": [],
   "author": "",
