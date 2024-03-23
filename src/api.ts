@@ -1,3 +1,7 @@
+import OpenAI from "openai";
+
+const openai = new OpenAI();
+
 type AuthorizeRequest = {
   apikey: string;
 };
@@ -34,7 +38,7 @@ export const getTask = async (token: string) => {
   return response;
 };
 
-export const submitAnswer = async (answer: string, token: string) => {
+export const submitAnswer = async (answer: any, token: string) => {
   const body: AnswerRequest = {
     answer,
   };
@@ -45,4 +49,12 @@ export const submitAnswer = async (answer: string, token: string) => {
 
   console.log("ODPOWIEDŹ:", response);
   return response;
+};
+
+export const moderate = async (input: string) => {
+  const moderation = await openai.moderations.create({
+    input,
+  });
+
+  return moderation;
 };
