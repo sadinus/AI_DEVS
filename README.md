@@ -16,6 +16,7 @@ Projekt do rozwiązywania zadań z API od AI_DEVS.
 4. Utwórz plik `.env` w katalogu głównym, który będzie wyglądał następująco:
 
    ```
+   API_KEY=twój-api-key-od-aidevs
    API_URL=https://tasks.aidevs.pl/
    ```
 
