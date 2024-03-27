@@ -38,6 +38,21 @@ export const getTask = async (token: string) => {
   return response;
 };
 
+export const getLiarTask = async (token: string, question: string) => {
+  const formData = new FormData();
+  formData.append("question", question);
+
+  console.log(`${process.env.API_URL}/task/`);
+
+  const response = await fetch(`${process.env.API_URL}/task/${token}`, {
+    method: "POST",
+    body: formData,
+  }).then((res) => res.json());
+
+  console.log("ZADANIE LIAR:", response);
+  return response;
+};
+
 export const submitAnswer = async (answer: any, token: string) => {
   const body: AnswerRequest = {
     answer,
