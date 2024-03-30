@@ -8,7 +8,8 @@
     "answer": "tsc && tsc-alias && node --env-file=.env ./dist/answer.js",
     "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js",
     "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js",
-    "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js"
+    "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js",
+    "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js"
   },
   "keywords": [],
   "author": "",

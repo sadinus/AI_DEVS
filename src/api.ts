@@ -29,13 +29,13 @@ export const authorize = async (taskName: string) => {
   return response as AuthorizeResponse;
 };
 
-export const getTask = async (token: string) => {
+export const getTask = async <T = any>(token: string) => {
   const response = await fetch(`${process.env.API_URL}/task/${token}`).then(
     (res) => res.json()
   );
 
   console.log("ZADANIE:", response);
-  return response;
+  return response as T;
 };
 
 export const getLiarTask = async (token: string, question: string) => {
