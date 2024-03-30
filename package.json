@@ -9,7 +9,8 @@
     "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js",
     "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js",
     "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js",
-    "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js"
+    "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js",
+    "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js"
   },
   "keywords": [],
   "author": "",

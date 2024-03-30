@@ -73,3 +73,12 @@ export const moderate = async (input: string) => {
 
   return moderation;
 };
+
+export const transformToEmbeddings = async (input: string) => {
+  const embedding = await openai.embeddings.create({
+    input,
+    model: "text-embedding-ada-002",
+  });
+
+  return embedding.data[0].embedding;
+};
