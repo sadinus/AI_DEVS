@@ -10,7 +10,8 @@
     "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js",
     "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js",
     "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js",
-    "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js"
+    "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js",
+    "whisper": "tsc && tsc-alias && node --env-file=.env ./dist/whisper.js"
   },
   "keywords": [],
   "author": "",
