@@ -12,7 +12,8 @@
     "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js",
     "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js",
     "whisper": "tsc && tsc-alias && node --env-file=.env ./dist/whisper.js",
-    "functions": "tsc && tsc-alias && node --env-file=.env ./dist/functions.js"
+    "functions": "tsc && tsc-alias && node --env-file=.env ./dist/functions.js",
+    "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js"
   },
   "keywords": [],
   "author": "",
