@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "task": "tsc && tsc-alias && node --env-file=.env ./dist/task.js",
-    "answer": "tsc && tsc-alias && node --env-file=.env ./dist/answer.js",
+    "helloapi": "tsc && tsc-alias && node --env-file=.env ./dist/helloapi.js",
     "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js",
     "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js",
     "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js",
