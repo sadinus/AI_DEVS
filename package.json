@@ -13,7 +13,8 @@
     "whisper": "tsc && tsc-alias && node --env-file=.env ./dist/whisper.js",
     "functions": "tsc && tsc-alias && node --env-file=.env ./dist/functions.js",
     "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js",
-    "scraper": "tsc && tsc-alias && node --env-file=.env ./dist/scraper.js"
+    "scraper": "tsc && tsc-alias && node --env-file=.env ./dist/scraper.js",
+    "whoami": "tsc && tsc-alias && node --env-file=.env ./dist/whoami.js"
   },
   "keywords": [],
   "author": "",
