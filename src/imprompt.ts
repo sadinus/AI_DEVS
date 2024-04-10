@@ -1,4 +1,4 @@
-import { SystemMessage } from "langchain/schema";
+import { SystemMessage } from "@langchain/core/messages";
 import { authorize, getTask, submitAnswer } from "./api";
 import { ChatOpenAI } from "@langchain/openai";
 

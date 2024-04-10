@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "langchain/chat_models/openai";
-import { HumanMessage, SystemMessage } from "langchain/schema";
+import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 import { submitAnswer } from "./api";
 
 const chat = new ChatOpenAI();

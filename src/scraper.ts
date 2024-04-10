@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { authorize, fetchScraper, getTask, submitAnswer } from "./api";
-import { SystemMessage } from "langchain/schema";
+import { SystemMessage } from "@langchain/core/messages";
 
 type Task = {
   msg: string;

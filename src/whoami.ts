@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { authorize, getTask, submitAnswer } from "./api";
-import { SystemMessage } from "langchain/schema";
+import { SystemMessage } from "@langchain/core/messages";
 import { Document } from "langchain/document";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
@@ -12,6 +12,10 @@ type Response = {
 
 const documents: Document[] = [];
 let solved = false;
+
+const chat = new ChatOpenAI({
+  modelName: "gpt-3.5-turbo",
+});
 
 while (!solved) {
   const { token } = await authorize("whoami");
@@ -29,10 +33,6 @@ while (!solved) {
 
   console.log("person info:");
   console.log(stringContext);
-
-  const chat = new ChatOpenAI({
-    modelName: "gpt-3.5-turbo",
-  });
 
   const { content: answer } = await chat.invoke([
     new SystemMessage(`Answer the question using the context below. The answer should be a person or if you don't know the answer, say only and exactly "don't know". \n
