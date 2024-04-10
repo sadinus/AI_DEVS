@@ -34,7 +34,7 @@ while (answer === noIdea) {
   console.log(stringContext);
 
   const chat = new ChatOpenAI({
-    modelName: "gpt-4",
+    modelName: "gpt-3.5-turbo",
   });
 
   const { content } = await chat.invoke([
