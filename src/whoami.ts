@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { authorize, getTask, submitAnswer } from "./api";
-import { SystemMessage } from "@langchain/core/messages";
+import { SystemMessage, HumanMessage } from "@langchain/core/messages";
 import { Document } from "langchain/document";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
@@ -35,8 +35,13 @@ while (!solved) {
   console.log(stringContext);
 
   const { content: answer } = await chat.invoke([
-    new SystemMessage(`Answer the question using the context below. The answer should be a person or if you don't know the answer, say only and exactly "don't know". \n
-      context###\n${stringContext}`),
+    new SystemMessage(
+      `The answer should be a person or if you don't know the answer, say only and exactly "don't know".`
+    ),
+    new HumanMessage(
+      `Answer the question using the context below.\n
+      context###\n${stringContext}`
+    ),
   ]);
 
   console.log(answer.toString());
