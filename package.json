@@ -13,7 +13,8 @@
     "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js",
     "whisper": "tsc && tsc-alias && node --env-file=.env ./dist/whisper.js",
     "functions": "tsc && tsc-alias && node --env-file=.env ./dist/functions.js",
-    "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js"
+    "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js",
+    "scraper": "tsc && tsc-alias && node --env-file=.env ./dist/scraper.js"
   },
   "keywords": [],
   "author": "",
@@ -25,8 +26,8 @@
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@langchain/openai": "0.0.22",
-    "langchain": "0.1.28",
+    "@langchain/openai": "0.0.x",
+    "langchain": "0.1.x",
     "openai": "^4.29.2"
   }
 }
