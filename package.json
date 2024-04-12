@@ -14,7 +14,8 @@
     "functions": "tsc && tsc-alias && node --env-file=.env ./dist/functions.js",
     "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js",
     "scraper": "tsc && tsc-alias && node --env-file=.env ./dist/scraper.js",
-    "whoami": "tsc && tsc-alias && node --env-file=.env ./dist/whoami.js"
+    "whoami": "tsc && tsc-alias && node --env-file=.env ./dist/whoami.js",
+    "search": "tsc && tsc-alias && node --env-file=.env ./dist/search.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,8 @@
   },
   "dependencies": {
     "@langchain/openai": "0.0.x",
+    "@qdrant/js-client-rest": "^1.8.2",
+    "bun-types": "^1.1.3",
     "langchain": "0.1.x",
     "openai": "^4.29.2"
   }
