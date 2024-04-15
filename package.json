@@ -15,7 +15,8 @@
     "rodo": "tsc && tsc-alias && node --env-file=.env ./dist/rodo.js",
     "scraper": "tsc && tsc-alias && node --env-file=.env ./dist/scraper.js",
     "whoami": "tsc && tsc-alias && node --env-file=.env ./dist/whoami.js",
-    "search": "tsc && tsc-alias && node --env-file=.env ./dist/search.js"
+    "search": "tsc && tsc-alias && node --env-file=.env ./dist/search.js",
+    "people": "tsc && tsc-alias && node --env-file=.env ./dist/people.js"
   },
   "keywords": [],
   "author": "",
