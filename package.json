@@ -19,7 +19,8 @@
     "people": "tsc && tsc-alias && node --env-file=.env ./dist/people.js",
     "knowledge": "tsc && tsc-alias && node --env-file=.env ./dist/knowledge.js",
     "tools": "tsc && tsc-alias && node --env-file=.env ./dist/tools.js",
-    "gnome": "tsc && tsc-alias && node --env-file=.env ./dist/gnome.js"
+    "gnome": "tsc && tsc-alias && node --env-file=.env ./dist/gnome.js",
+    "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js"
   },
   "keywords": [],
   "author": "",
@@ -33,7 +34,9 @@
   "dependencies": {
     "@langchain/openai": "0.0.x",
     "@qdrant/js-client-rest": "^1.8.2",
+    "@types/express": "^4.17.21",
     "bun-types": "^1.1.3",
+    "express": "^4.19.2",
     "langchain": "0.1.x",
     "openai": "^4.29.2"
   }
