@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "helloapi": "tsc && tsc-alias && node --env-file=.env ./dist/helloapi.js",
-    "moderate": "tsc && tsc-alias && node --env-file=.env ./dist/moderate.js",
-    "blog": "tsc && tsc-alias && node --env-file=.env ./dist/blog.js",
+    "moderation": "tsc && tsc-alias && node --env-file=.env ./dist/moderation.js",
+    "blogger": "tsc && tsc-alias && node --env-file=.env ./dist/blogger.js",
     "liar": "tsc && tsc-alias && node --env-file=.env ./dist/liar.js",
     "imprompt": "tsc && tsc-alias && node --env-file=.env ./dist/imprompt.js",
     "embedding": "tsc && tsc-alias && node --env-file=.env ./dist/embedding.js",

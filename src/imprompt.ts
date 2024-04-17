@@ -28,4 +28,6 @@ const { content: answer } = await chat.invoke([
   Answer to question: ${query}`),
 ]);
 
+console.log("answer: ", answer);
+
 submitAnswer(answer, token);
