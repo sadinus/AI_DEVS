@@ -20,7 +20,8 @@
     "knowledge": "tsc && tsc-alias && node --env-file=.env ./dist/knowledge.js",
     "tools": "tsc && tsc-alias && node --env-file=.env ./dist/tools.js",
     "gnome": "tsc && tsc-alias && node --env-file=.env ./dist/gnome.js",
-    "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js"
+    "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js",
+    "ownapipro": "tsc && tsc-alias && node --env-file=.env ./dist/ownapipro.js"
   },
   "keywords": [],
   "author": "",
