@@ -1,6 +1,6 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { authorize, getTask, submitAnswer } from "./api";
-import { SystemMessage, HumanMessage } from "@langchain/core/messages";
+import { SystemMessage } from "@langchain/core/messages";
 import express from "express";
 
 const { token } = await authorize("ownapi");
