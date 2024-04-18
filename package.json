@@ -21,7 +21,8 @@
     "tools": "tsc && tsc-alias && node --env-file=.env ./dist/tools.js",
     "gnome": "tsc && tsc-alias && node --env-file=.env ./dist/gnome.js",
     "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js",
-    "ownapipro": "tsc && tsc-alias && node --env-file=.env ./dist/ownapipro.js"
+    "ownapipro": "tsc && tsc-alias && node --env-file=.env ./dist/ownapipro.js",
+    "meme": "tsc && tsc-alias && node --env-file=.env ./dist/meme.js"
   },
   "keywords": [],
   "author": "",
