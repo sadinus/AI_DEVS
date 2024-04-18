@@ -22,7 +22,8 @@
     "gnome": "tsc && tsc-alias && node --env-file=.env ./dist/gnome.js",
     "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js",
     "ownapipro": "tsc && tsc-alias && node --env-file=.env ./dist/ownapipro.js",
-    "meme": "tsc && tsc-alias && node --env-file=.env ./dist/meme.js"
+    "meme": "tsc && tsc-alias && node --env-file=.env ./dist/meme.js",
+    "optimaldb": "tsc && tsc-alias && node --env-file=.env ./dist/optimaldb.js"
   },
   "keywords": [],
   "author": "",

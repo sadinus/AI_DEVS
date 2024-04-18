@@ -1,4 +1,3 @@
-import { Url } from "url";
 import { authorize, getTask, submitAnswer } from "./api";
 
 type Task = {
