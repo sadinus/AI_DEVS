@@ -23,7 +23,8 @@
     "ownapi": "tsc && tsc-alias && node --env-file=.env ./dist/ownapi.js",
     "ownapipro": "tsc && tsc-alias && node --env-file=.env ./dist/ownapipro.js",
     "meme": "tsc && tsc-alias && node --env-file=.env ./dist/meme.js",
-    "optimaldb": "tsc && tsc-alias && node --env-file=.env ./dist/optimaldb.js"
+    "optimaldb": "tsc && tsc-alias && node --env-file=.env ./dist/optimaldb.js",
+    "google": "tsc && tsc-alias && node --env-file=.env ./dist/google.js"
   },
   "keywords": [],
   "author": "",
@@ -41,6 +42,7 @@
     "bun-types": "^1.1.3",
     "express": "^4.19.2",
     "langchain": "0.1.x",
-    "openai": "^4.29.2"
+    "openai": "^4.29.2",
+    "serpapi": "^2.1.0"
   }
 }
